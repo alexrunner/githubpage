@@ -1,0 +1,52 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Corredores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Corredores</h1>
+
+    <form id="corredorForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required><br><br>
+
+      <label for="equipo">Equipo:</label>
+      <input type="text" id="equipo" name="equipo"><br><br>
+
+      <label for="distancia">Distancia:</label>
+      <input type="text" id="distancia" name="distancia"><br><br>
+
+      <label for="categoria">Categoría:</label>
+      <input type="text" id="categoria" name="categoria"><br><br>
+
+      <button type="submit">Agregar Corredor</button>
+    </form>
+
+    <h2>Lista de Corredores</h2>
+    <table id="corredoresTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Equipo</th>
+          <th>Distancia</th>
+          <th>Categoría</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <button id="exportarExcel">Exportar a Excel</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
